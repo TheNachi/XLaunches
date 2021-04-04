@@ -37,7 +37,7 @@ class LaunchesViewController: UIViewController {
             .modelSelected(LaunchViewModel.self)
             .asDriver()
             .drive(onNext: { selected in
-                let rocketVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "secondVC") as! RocketViewController
+                let rocketVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "rocketVC") as! RocketViewController
                 rocketVC.rocketId = selected.rocketId
                 self.navigationController?.pushViewController(rocketVC, animated: true)
                 
