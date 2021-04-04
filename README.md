@@ -15,6 +15,7 @@ These instructions will help you set up the project and get running on your loca
 
       `https://github.com/TheNachi/XLaunches.git`
   - cd XLaunches
+  - run `pod install`
   - Build the app with Xcode
 
 ### Testing
