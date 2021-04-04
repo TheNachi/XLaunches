@@ -23,6 +23,22 @@ extension String {
         } else {
             return ""
         }
+    }
+    
+    func changeToDate(with format: String = "YYYY-MM-dd") -> Date? {
+        let stringInput = String(self.prefix(10))
+        let dateFormatter = Formatter.create()
+        dateFormatter.dateFormat = format
+        return dateFormatter.date(from: stringInput)
+    }
 
+}
+
+
+struct Formatter {
+    public static func create() -> DateFormatter {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
     }
 }
