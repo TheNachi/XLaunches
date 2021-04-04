@@ -22,6 +22,10 @@
 		B6591D8F261A5D2900A7D3F0 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591D8E261A5D2900A7D3F0 /* LaunchModel.swift */; };
 		B6591D94261A5D4A00A7D3F0 /* RocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591D93261A5D4A00A7D3F0 /* RocketModel.swift */; };
 		B6591D99261A5D9900A7D3F0 /* LaunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591D98261A5D9900A7D3F0 /* LaunchViewModel.swift */; };
+		B6591DA2261A5EC700A7D3F0 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591DA1261A5EC700A7D3F0 /* UIImageView+Extensions.swift */; };
+		B6591DA7261A5FC400A7D3F0 /* LaunchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591DA6261A5FC400A7D3F0 /* LaunchService.swift */; };
+		B6591DAC261A61CF00A7D3F0 /* LaunchesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591DAB261A61CF00A7D3F0 /* LaunchesTableViewModel.swift */; };
+		B6591DB1261A632900A7D3F0 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6591DB0261A632900A7D3F0 /* RocketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		B6591D8E261A5D2900A7D3F0 /* LaunchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
 		B6591D93261A5D4A00A7D3F0 /* RocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketModel.swift; sourceTree = "<group>"; };
 		B6591D98261A5D9900A7D3F0 /* LaunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewModel.swift; sourceTree = "<group>"; };
+		B6591DA1261A5EC700A7D3F0 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		B6591DA6261A5FC400A7D3F0 /* LaunchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchService.swift; sourceTree = "<group>"; };
+		B6591DAB261A61CF00A7D3F0 /* LaunchesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewModel.swift; sourceTree = "<group>"; };
+		B6591DB0261A632900A7D3F0 /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
 		F0E0ACECA2B95EED79573104 /* Pods-XLaunches.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLaunches.debug.xcconfig"; path = "Target Support Files/Pods-XLaunches/Pods-XLaunches.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B6591D98261A5D9900A7D3F0 /* LaunchViewModel.swift */,
+				B6591DAB261A61CF00A7D3F0 /* LaunchesTableViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 				B6591D9D261A5DB800A7D3F0 /* Cells */,
 				B6591D3B261A548700A7D3F0 /* LaunchesViewController.swift */,
 				B6591D3D261A548700A7D3F0 /* Main.storyboard */,
+				B6591DB0261A632900A7D3F0 /* RocketViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +225,7 @@
 		B6591D77261A575D00A7D3F0 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B6591DA6261A5FC400A7D3F0 /* LaunchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -232,6 +243,7 @@
 		B6591D79261A576F00A7D3F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B6591DA1261A5EC700A7D3F0 /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -486,9 +498,13 @@
 				B6591D3C261A548700A7D3F0 /* LaunchesViewController.swift in Sources */,
 				B6591D99261A5D9900A7D3F0 /* LaunchViewModel.swift in Sources */,
 				B6591D38261A548700A7D3F0 /* AppDelegate.swift in Sources */,
+				B6591DAC261A61CF00A7D3F0 /* LaunchesTableViewModel.swift in Sources */,
 				B6591D94261A5D4A00A7D3F0 /* RocketModel.swift in Sources */,
 				B6591D3A261A548700A7D3F0 /* SceneDelegate.swift in Sources */,
+				B6591DB1261A632900A7D3F0 /* RocketViewController.swift in Sources */,
+				B6591DA2261A5EC700A7D3F0 /* UIImageView+Extensions.swift in Sources */,
 				B6591D8F261A5D2900A7D3F0 /* LaunchModel.swift in Sources */,
+				B6591DA7261A5FC400A7D3F0 /* LaunchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

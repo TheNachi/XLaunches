@@ -15,6 +15,17 @@ class LaunchesTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var detailsTextView: UITextView!
     
-    func bindViewModel(with viewModel: LaunchViewModel)
+    func bindViewModel(with viewModel: LaunchViewModel) {
+        if let urlString = viewModel.imageString,
+           let url = URL(string: urlString) {
+            self.patchImageView.load(url: url)
+        }
+        if viewModel.upcoming {
+            self.upcomingLabel.isHidden = false
+        }
+        self.launchNumberLabel.text = viewModel.launchNumber
+        self.dateLabel.text = viewModel.date
+        self.detailsTextView.text = viewModel.details
+    }
     
 }
