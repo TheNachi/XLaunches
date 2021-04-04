@@ -24,7 +24,7 @@ final class LaunchesTableViewModel {
     }
     
     func isSuccessfulOrUpcoming(launch: LaunchModel) -> Bool {
-        if let interval = launch.date_utc.changeToDate(), interval.yearsFromNow <= 3 {
+        if let launchDate = launch.date_utc.changeToDate(), launchDate.yearsFromNow <= 3 {
             if launch.upcoming {
                 return true
             }
