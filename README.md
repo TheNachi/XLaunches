@@ -13,8 +13,8 @@ These instructions will help you set up the project and get running on your loca
 
   - Clone this repository
 
-      `https://github.com/TheNachi/Aster.git`
-  - cd Aster
+      `https://github.com/TheNachi/XLaunches.git`
+  - cd XLaunches
   - Build the app with Xcode
 
 ### Testing
